@@ -83,7 +83,7 @@ jobs:
             exit 1
           fi
 
-          hf upload "$SPACE_ID" . app/ \
+          hf upload "$SPACE_ID" app/ . \
             --repo-type space \
             --commit-message "Deploy static application"
 
